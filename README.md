@@ -8,3 +8,9 @@ Layer 3: TechHelper.Application - Role: Application (Business Logic)
 Layer 4: TechHelper.Infrastructure - Role: database integration – EF Core, repositories
 Layer 5: TechHelper.Shared - Role: Common Models, DTOs, Interfaces
 TechHelper.Test - Role: tests
+
+Used technologies nad dependencies:
+1. EF Core with packages:
+   - Microsoft.EntityFrameworkCore
+   - Microsoft.EntityFrameworkCore.SqlServer
+   - Microsoft.EntityFrameworkCore.Tools
