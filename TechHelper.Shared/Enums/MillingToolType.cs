@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TechHelper.Shared.Enums
 {
-    public enum MillType
+    public enum MillingToolType
     {
         Hss,
         Vhm,
