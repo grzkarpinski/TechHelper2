@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TechHelper.Shared.Enums;
 
 namespace TechHelper.Infrastructure.Entities
@@ -13,6 +14,7 @@ namespace TechHelper.Infrastructure.Entities
 
         public MillingToolType MillingToolType { get; set; }
 
-        // Add speeds and feeds parameters from table
+        public ICollection<CuttingParametersRange> CuttingParametersRanges { get; set; } = new List<CuttingParametersRange>();
+        public ICollection<CuttingParametersFinal> CuttingParametersFinals { get; set; } = new List<CuttingParametersFinal>();
     }
 }

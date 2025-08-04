@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TechHelper.Shared.Enums;
 
 namespace TechHelper.Infrastructure.Entities
@@ -8,8 +9,7 @@ namespace TechHelper.Infrastructure.Entities
         public int NumberOfTeeth { get; set; }
         public CutterHeadType CutterHeadType { get; set; }
 
-        // Will be connected many-to-many with MillingInsert
-
-        // Add speeds and feeds parameters from table
+        public ICollection<MillingInsert> MillingInserts { get; set; } = new List<MillingInsert>();
+        public ICollection<CuttingParametersFinal> CuttingParametersFinals { get; set; } = new List<CuttingParametersFinal>();
     }
 }

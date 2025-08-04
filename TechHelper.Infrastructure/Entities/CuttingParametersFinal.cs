@@ -14,6 +14,13 @@ namespace TechHelper.Infrastructure.Entities
 
         public string? Notes { get; set; }
 
-        // Will be connected 1:1 with Drill, MillingTool, or MillingInsert (only one at a time)
+        public int? DrillId { get; set; }
+        public Drill? Drill { get; set; }
+
+        public int? MillingToolId { get; set; }
+        public MillingTool? MillingTool { get; set; }
+
+        public int? CutterHeadId { get; set; }
+        public CutterHead? CutterHead { get; set; }
     }
 }

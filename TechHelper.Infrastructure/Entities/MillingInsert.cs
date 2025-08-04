@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace TechHelper.Infrastructure.Entities
 {
@@ -7,8 +8,7 @@ namespace TechHelper.Infrastructure.Entities
         public string Designation { get; set; }
         public double Radius { get; set; }
 
-        // Will be connected many-to-many with CutterHead
-
-        // Add speeds and feeds parameters from table
+        public ICollection<CutterHead> CutterHeads { get; set; } = new List<CutterHead>();
+        public ICollection<CuttingParametersRange> CuttingParametersRanges { get; set; } = new List<CuttingParametersRange>();
     }
 }
