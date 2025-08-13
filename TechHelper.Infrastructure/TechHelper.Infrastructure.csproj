@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TechHelper.Application\TechHelper.Application.csproj" />
     <ProjectReference Include="..\TechHelper.Shared\TechHelper.Shared.csproj" />
   </ItemGroup>
 

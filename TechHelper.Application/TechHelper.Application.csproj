@@ -8,10 +8,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TechHelper.Shared\TechHelper.Shared.csproj" />
+    <ProjectReference Include="..\TechHelper.Infrastructure\TechHelper.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Interfaces\" />
     <Folder Include="Services\Implementations\" />
   </ItemGroup>
 
