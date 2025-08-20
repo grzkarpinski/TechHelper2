@@ -4,7 +4,7 @@ using TechHelper.Shared.Enums;
 
 namespace TechHelper.Infrastructure.Entities
 {
-    public class CutterHead : BaseEntity
+    public class CutterHead : BaseTool
     {
         public int NumberOfTeeth { get; set; }
         public CutterHeadType CutterHeadType { get; set; }
